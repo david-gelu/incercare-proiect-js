@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="RO-ro">
+ 
+ <head>
+    <!-- head se ocupa de functionalitatea paginii -->
+      
+         <title>Incercare</title>
+         <meta charset="UTF-8">
+         <meta name="keywords" content="">
+         <meta name="description" content="">
+         <meta name="robots" content="index,follow">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+         <link href="css/font-awesome.min.css" rel="stylesheet">
+         <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body >
+<!-- log in area -->
+<div class="container-fluid ">
+  <div class="row">
+    <div class="container">
+      <div class="row">
+        <div class="login-wrapper" id="display" >
+          <div >
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks active" onclick="openCity(event, 'login')">Log In</button>
+                <button class="tablinks" onclick="openCity(event, 'register')">Register</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="login" class="tabcontent" style="display:block;" >
+                <h3>Log In</h3>
+                <form  action="home.html" method="post" onsubmit="handlerSubmit(event)">
+                  <input type="text" placeholder="Username" maxlength="20" name="user" required>
+                  <input type="password" placeholder="Password" name="pass" required>
+                  <button type="submit" data-dismiss="display">Log In</button>
+                </form>
+            </div>
+
+            <div id="register" class="tabcontent">
+                <h3>Register</h3>
+                <form action="home.html" method="post" onsubmit="handlerSubmit(event)">
+                  <input type="email" placeholder="Email Adress" required>
+                  <input type="text" placeholder="Username" maxlength="20" required>
+                  <input type="password" placeholder="Password" required>
+                  <input type="password" placeholder="Repeat password" required>
+                  <label >
+                    <input type="checkbox" required>
+                    <span>Accept <a href="#">Terms and Conditions</a></span>
+                  </label>
+                  <button type="submit" data-dismiss="display">Log In</button>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="js/custom.js"></script>
+<script src="js/proiect.js"></script>  
+</body>
+</html>
